@@ -2,18 +2,20 @@
 % Please edit documentation in R/rbind_with_fill.r
 \name{rbind_with_fill}
 \alias{rbind_with_fill}
-\title{This function uses add_missing_cols_from_x_to_y to perform rbind that fills empry rows and columns with fill instead of stopping
-param x Data frame 1
-param y Data frame 2
-param fill Variable to fill empty fields with.
-return Data frame. Combined from data frames 1 and 2, with empty cols filled.}
+\title{This function uses add_missing_cols_from_x_to_y to perform rbind that fills empry rows and columns with fill instead of stopping}
 \usage{
 rbind_with_fill(x, y, fill = 0)
 }
+\arguments{
+\item{x}{Data frame 1}
+
+\item{y}{Data frame 2}
+
+\item{fill}{Variable to fill empty fields with.}
+}
+\value{
+Data frame. Combined from data frames 1 and 2, with empty cols filled.
+}
 \description{
 This function uses add_missing_cols_from_x_to_y to perform rbind that fills empry rows and columns with fill instead of stopping
-param x Data frame 1
-param y Data frame 2
-param fill Variable to fill empty fields with.
-return Data frame. Combined from data frames 1 and 2, with empty cols filled.
 }

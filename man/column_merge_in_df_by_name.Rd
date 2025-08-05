@@ -2,22 +2,24 @@
 % Please edit documentation in R/column_merge_in_df_by_name.r
 \name{column_merge_in_df_by_name}
 \alias{column_merge_in_df_by_name}
-\title{This function replaces first instance of a column (in data frame) with a certain name by what is produced by "column merger" function by combining it with a second column.
-param input_df Data frame from which column types will be copied.
-param colname_1 First column to be merged. Will be replaced by column merger.
-param colname_2 Second column to be merged. Will be dropped.
-param new_name A name for column, created by merging. If NA (default) it gets replaced by a name of colname 1.
-param ... Additionall parameters, passed to "column merger" function.
-return Data frame with a merged column in a place of colunm with colname_1.}
+\title{This function replaces first instance of a column (in data frame) with a certain name by what is produced by "column merger" function by combining it with a second column.}
 \usage{
 column_merge_in_df_by_name(input_df, colname_1, colname_2, new_name = NA, ...)
 }
+\arguments{
+\item{input_df}{Data frame from which column types will be copied.}
+
+\item{colname_1}{First column to be merged. Will be replaced by column merger.}
+
+\item{colname_2}{Second column to be merged. Will be dropped.}
+
+\item{new_name}{A name for column, created by merging. If NA (default) it gets replaced by a name of colname 1.}
+
+\item{...}{Additionall parameters, passed to "column merger" function.}
+}
+\value{
+Data frame with a merged column in a place of colunm with colname_1.
+}
 \description{
 This function replaces first instance of a column (in data frame) with a certain name by what is produced by "column merger" function by combining it with a second column.
-param input_df Data frame from which column types will be copied.
-param colname_1 First column to be merged. Will be replaced by column merger.
-param colname_2 Second column to be merged. Will be dropped.
-param new_name A name for column, created by merging. If NA (default) it gets replaced by a name of colname 1.
-param ... Additionall parameters, passed to "column merger" function.
-return Data frame with a merged column in a place of colunm with colname_1.
 }

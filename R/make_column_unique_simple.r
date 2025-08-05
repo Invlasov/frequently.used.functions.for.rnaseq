@@ -1,4 +1,10 @@
-# like previous "make column unique" functions, but just combines unique values with ", " delimiter
+#' Simple version of "make column unique" functions, but just combines unique values with ", " delimiter
+#' @param x Data frame to process.
+#' @param colnum Number of a column to make unique.
+#' @param delim Delimiter to paste unique values of.
+#' @export
+#' @return A data frame with a designated column having only unique values.
+
 make_column_unique_simple<-function(x,colnum=1,delim=", ") {
 row_unique<-unique(x[,colnum])
 input_matrix<-matrix(nrow=length(row_unique),ncol=ncol(x))

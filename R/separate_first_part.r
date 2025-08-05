@@ -4,6 +4,7 @@
 #' @export
 #' @param x Input string to be splat.
 #' @param pattern Patter to use in strsplit. Single space by default
+#' @return Splat part.
 separate_first_part<-function(x,pattern=" ") {
 splat<-strsplit(x=x,split=pattern)
 last_part<-vector(mode="character")

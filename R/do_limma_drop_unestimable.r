@@ -4,8 +4,8 @@
 #' @param output_file_degs A path to a file. FC and p.val for only degs (if any) for each expressed gene are going to be written in the file with that path
 #' @param output_plot_path A path to a file. If not NA - a plot of mena-variance trend will be written there.
 #' @param ... Other arguments you need to pass to do_limma
+#' @return Writes outputs to the designated paths
 #' @export
-#' return Writes outputs to the designated paths
 
 
 do_limma_drop_unestimable<-function(design_matrix,output_file_result,output_file_degs,output_plot_path,...) {	

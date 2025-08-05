@@ -23,6 +23,9 @@ do_limma_drop_unestimable(
 
 \item{...}{Other arguments you need to pass to do_limma}
 }
+\value{
+Writes outputs to the designated paths
+}
 \description{
 A wrapper around limma that automatically reruns it while dropping unestimable variables from design matrix.
 }

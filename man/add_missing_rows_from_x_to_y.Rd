@@ -2,16 +2,20 @@
 % Please edit documentation in R/add_missing_rows_from_x_to_y.r
 \name{add_missing_rows_from_x_to_y}
 \alias{add_missing_rows_from_x_to_y}
-\title{This function adds missing (by rownames) rows from frame x to frame y.
-param x Data frame. Donor of rows.
-param y Data frame. Recepient of rows.
-return Data frame y with rows from data frame x added.}
+\title{This function adds missing (by rownames) rows from frame x to frame y.}
 \usage{
 add_missing_rows_from_x_to_y(x, y, fill = 0)
 }
+\arguments{
+\item{x}{Data frame. Donor of rows.}
+
+\item{y}{Data frame. Recepient of rows.}
+
+\item{fill}{Variable to fil empty rows with.}
+}
+\value{
+Data frame y with rows from data frame x added.
+}
 \description{
 This function adds missing (by rownames) rows from frame x to frame y.
-param x Data frame. Donor of rows.
-param y Data frame. Recepient of rows.
-return Data frame y with rows from data frame x added.
 }

@@ -13,11 +13,15 @@
 #' @param output_plot_path A path to a file. If not NA - a plot of mena-variance trend will be written there.
 #' @param pre_filtration Boolean. Do we do FC filtration before p. adjustment? True by default.
 #' @param do_fc_filtration Boolean. Do we do FC filtration at all? True by default.
+#' @return Writes outputs to the designated paths
 #' @importFrom grDevices png dev.off 
 #' @importFrom stats p.adjust
 #' @importFrom utils capture.output read.table write.table
 #' @export
-#' return Writes outputs to the designated paths
+#' @importFrom edgeR DGEList calcNormFactors
+#' @importFrom limma lmFit eBayes
+
+
 do_limma<-function(count_matrix,design_matrix,output_file_result,output_file_degs,local_ensembl_annotation,contrast_num=2,threshold_fc=1.5,threshold_pval=0.05,method_string="hommel",output_plot_path=NA,pre_filtration=TRUE,do_fc_filtration=TRUE) {
 
 	if (!is.na(output_plot_path)) {

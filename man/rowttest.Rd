@@ -16,6 +16,9 @@ rowttest(input, experiments, controls, paired = FALSE)
 
 \item{paired}{Boolean. Should t-test be paired or unpaired?}
 }
+\value{
+Vector of p.values per row.
+}
 \description{
 This is rowttest function for use with "apply" on data frames.
 It takes vector of values and position of experiments and controls in vector and returns a single p.val

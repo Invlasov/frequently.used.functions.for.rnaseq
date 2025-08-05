@@ -12,6 +12,9 @@ separate_last_part(x, pattern = " ")
 
 \item{pattern}{Patter to use in strsplit. Single space by default}
 }
+\value{
+Splat part.
+}
 \description{
 Function that gets the last part of string, splat by pattern.
 For example "why are you here" splat by this function with default delim would return "here"

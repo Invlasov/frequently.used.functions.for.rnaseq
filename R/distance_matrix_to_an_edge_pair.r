@@ -1,5 +1,8 @@
-# rough implementation of distance matrix to edge pair convesrion,
-# but it should work on symmetrical distance matrixes, obtained by as.matrix on an output of dist function
+#' This function converts symmetrical distance matrixes (such as matrixes, obtained by as.matrix from an output of dist function) into data frame of edges (with distance).
+#' @param x Symmetrical distance matrix.
+#' @return Data frame of edge pairs (with distance).
+#' @export
+
 distance_matrix_to_an_edge_pair<-function(x) {
 	done_already<-c()
 	cname<-colnames(x)

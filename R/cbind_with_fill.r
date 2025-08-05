@@ -1,8 +1,8 @@
 #' This function uses add_missing_rows_from_x_to_y to perform cbind that fills empry rows and columns with fill instead of stopping
-#' param x Data frame 1 
-#' param y Data frame 2
-#' param fill Variable to fill empty fields with.
-#' return Data frame. Combined from data frames 1 and 2, with empty rows filled.
+#' @param x Data frame 1 
+#' @param y Data frame 2
+#' @param fill Variable to fill empty fields with.
+#' @return Data frame. Combined from data frames 1 and 2, with empty rows filled.
 #' @export
 
 

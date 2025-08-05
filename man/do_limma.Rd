@@ -45,6 +45,9 @@ do_limma(
 
 \item{do_fc_filtration}{Boolean. Do we do FC filtration at all? True by default.}
 }
+\value{
+Writes outputs to the designated paths
+}
 \description{
 This will be a test run for adding roxygen comment to files
 This is wrapper to run limma. Warning - it requires specifically formatted local ensembl annotation to run correctly

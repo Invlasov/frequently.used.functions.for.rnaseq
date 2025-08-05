@@ -1,7 +1,8 @@
 #' This function adds missing (by colnames) cols from frame x to frame y.
-#' param x Data frame. Donor of cols.
-#' param y Data frame. Recepient of cols.
-#' return Data frame y with columns from data frame x added.
+#' @param x Data frame. Donor of cols.
+#' @param y Data frame. Recepient of cols.
+#' @param fill Variable to fil empty cols with.
+#' @return Data frame y with columns from data frame x added.
 #' @export
 
 add_missing_cols_from_x_to_y<-function(x, y,fill=0) {

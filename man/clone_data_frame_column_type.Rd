@@ -2,16 +2,18 @@
 % Please edit documentation in R/clone_data_frame_column_type.r
 \name{clone_data_frame_column_type}
 \alias{clone_data_frame_column_type}
-\title{This function copies the types of columns from one data frame to another.
-param donor Data frame from which column types will be copied.
-param acceptor Data frame to which column types will be copied.
-return Data frame donor with column types from acceptor.}
+\title{This function copies the types of columns from one data frame to another.}
 \usage{
 clone_data_frame_column_type(donor, acceptor)
 }
+\arguments{
+\item{donor}{Data frame from which column types will be copied.}
+
+\item{acceptor}{Data frame to which column types will be copied.}
+}
+\value{
+Data frame donor with column types from acceptor.
+}
 \description{
 This function copies the types of columns from one data frame to another.
-param donor Data frame from which column types will be copied.
-param acceptor Data frame to which column types will be copied.
-return Data frame donor with column types from acceptor.
 }

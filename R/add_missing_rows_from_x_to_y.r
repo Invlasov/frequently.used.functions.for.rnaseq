@@ -1,7 +1,8 @@
 #' This function adds missing (by rownames) rows from frame x to frame y.
-#' param x Data frame. Donor of rows.
-#' param y Data frame. Recepient of rows.
-#' return Data frame y with rows from data frame x added.
+#' @param x Data frame. Donor of rows.
+#' @param y Data frame. Recepient of rows.
+#' @return Data frame y with rows from data frame x added.
+#' @param fill Variable to fil empty rows with.
 #' @export
 
 add_missing_rows_from_x_to_y<-function(x, y,fill=0) {

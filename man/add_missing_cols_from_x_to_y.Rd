@@ -2,16 +2,20 @@
 % Please edit documentation in R/add_missing_cols_from_x_to_y.r
 \name{add_missing_cols_from_x_to_y}
 \alias{add_missing_cols_from_x_to_y}
-\title{This function adds missing (by colnames) cols from frame x to frame y.
-param x Data frame. Donor of cols.
-param y Data frame. Recepient of cols.
-return Data frame y with columns from data frame x added.}
+\title{This function adds missing (by colnames) cols from frame x to frame y.}
 \usage{
 add_missing_cols_from_x_to_y(x, y, fill = 0)
 }
+\arguments{
+\item{x}{Data frame. Donor of cols.}
+
+\item{y}{Data frame. Recepient of cols.}
+
+\item{fill}{Variable to fil empty cols with.}
+}
+\value{
+Data frame y with columns from data frame x added.
+}
 \description{
 This function adds missing (by colnames) cols from frame x to frame y.
-param x Data frame. Donor of cols.
-param y Data frame. Recepient of cols.
-return Data frame y with columns from data frame x added.
 }

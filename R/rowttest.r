@@ -5,6 +5,8 @@
 #' @param controls Numeric vector. Position of control values in an input vector.
 #' @param paired Boolean. Should t-test be paired or unpaired?
 #' @importFrom stats t.test
+#' @return Vector of p.values per row.
+#' @export
 
 rowttest<-function(input,experiments,controls,paired=FALSE) {
 	output<-tryCatch(
