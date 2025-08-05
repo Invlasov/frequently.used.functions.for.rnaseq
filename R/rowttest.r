@@ -1,6 +1,12 @@
-#this is rowttest function for use with "apply" on data frames.
-#it takes vector of values and position of experiments and controls in vector. and returns either p.val of t test
-rowttest<-function(input,experiments,controls,p.val=TRUE,paired=FALSE) {
+#' This is rowttest function for use with "apply" on data frames.
+#' It takes vector of values and position of experiments and controls in vector and returns a single p.val
+#' @param input Numeric vector. Values to run t.test on
+#' @param experiments Numeric vector. Position of experiment values in an input vector.
+#' @param controls Numeric vector. Position of control values in an input vector.
+#' @param paired Boolean. Should t-test be paired or unpaired?
+#' @importFrom stats t.test
+
+rowttest<-function(input,experiments,controls,paired=FALSE) {
 	output<-tryCatch(
 		{
 			intermediate<-t.test(x=input[experiments],y=input[controls],paired=paired)
@@ -10,7 +16,7 @@ rowttest<-function(input,experiments,controls,p.val=TRUE,paired=FALSE) {
 			message("Here's the original error message:")
             message(cond)
 			message("\n")
-			if (p.val) {return(1)}
+			if (intermediate$p.value) {return(1)}
 			else (return(NA))
 			},
 		warning=function(cond) {
@@ -21,5 +27,4 @@ rowttest<-function(input,experiments,controls,p.val=TRUE,paired=FALSE) {
 		},
 			finally={}
 	)
-	return(output)
 }
