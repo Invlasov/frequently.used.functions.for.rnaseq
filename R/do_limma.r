@@ -17,7 +17,7 @@
 #' @importFrom stats p.adjust
 #' @importFrom utils capture.output read.table write.table
 #' @export
-
+#' return Writes outputs to the designated paths
 do_limma<-function(count_matrix,design_matrix,output_file_result,output_file_degs,local_ensembl_annotation,contrast_num=2,threshold_fc=1.5,threshold_pval=0.05,method_string="hommel",output_plot_path=NA,pre_filtration=TRUE,do_fc_filtration=TRUE) {
 
 	if (!is.na(output_plot_path)) {

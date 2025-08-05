@@ -1,4 +1,9 @@
-#this function clones the types of columns from one data frame to another
+#' This function copies the types of columns from one data frame to another.
+#' param donor Data frame from which column types will be copied.
+#' param acceptor Data frame to which column types will be copied.
+#' return Data frame donor with column types from acceptor.
+#' @export
+
 clone_data_frame_column_type<-function(donor, acceptor) {
 	if (is.data.frame(donor) & is.data.frame(acceptor)) {
 		if (ncol(donor)==ncol(acceptor)) {
